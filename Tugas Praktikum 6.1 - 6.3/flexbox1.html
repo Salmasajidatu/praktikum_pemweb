@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 6.1</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0  ;
+    }
+
+    #container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+
+    img {
+        width: 240px;
+        height: auto;
+        border: 2px solid black;
+    }
+
+    .atas {
+        width: 33.33%;
+        text-align: center;
+    }
+
+    .atas img {
+        width: 97%;
+        height: auto;
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="box atas"><img src="image 1.jpg"alt="foto"></div>  
+        <div class="box atas"><img src="image 2.jpg" alt="foto"></div>  
+        <div class="box atas"><img src="image 3.jpg"alt="foto"></div>  
+        <div class="box"><img src="image 4.jpg" alt="foto"></div>  
+        <div class="box"><img src="image 5.jpg" alt="foto"></div>  
+        <div class="box"><img src="image 6.png" alt="foto"></div>  
+        <div class="box"><img src="image 7.png" alt="foto"></div>   
+        <div class="box"><img src="image 8.png" alt="foto"></div>   
+   </div>
+</body>
+</html>

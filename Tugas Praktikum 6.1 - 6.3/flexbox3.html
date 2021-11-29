@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox 6.3</title>
+<style>
+    * {
+    box-sizing: border-box; 
+    }
+
+    body {
+      margin: 10px;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-color: pink;
+    }
+
+    header {
+      background-color: #48D1CC;
+      height: 10vh;
+      text-align: center;
+    }
+
+    #main {
+      display: flex;
+      flex: 1;
+      padding: 10px;
+    }
+
+    #main > article {
+      background-color: #F08080;
+      order: 2;
+      flex: 1;
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    #main > aside {
+      flex: 0.3;
+      margin: 10px;
+      background-color: #20B2AA;
+      display: flex;
+    }
+
+    aside .pinggir {
+      padding: 100px;
+      text-align: center;
+    }
+
+    article .atas {
+      width: 100%;
+      text-align: center;
+    }
+
+    article img {
+      width: 28%;
+    }
+
+    footer {
+      background-color: #48D1CC;
+      height: 10vh;
+      text-align: center;
+    }
+
+    aside, footer, article {
+      padding: 1em;
+    }
+</style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <div id="main">
+        <article><h1 class="atas">Article</h1><img src="image 1.jpg" alt="foto 1"><img src="image 2.jpg" alt="foto 2"><img src="image 3.jpg" alt="foto 3"></article>
+        <aside><h1 class="pinggir">Aside</h1></aside>
+    </div>
+    <footer><h1>Footer</h1></footer>
+</body>
+</html>
