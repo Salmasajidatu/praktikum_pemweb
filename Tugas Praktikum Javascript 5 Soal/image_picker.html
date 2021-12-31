@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+
+    <script type="text/javascript">
+        function load() {
+            let pilih = document.getElementById('pilih').value
+            let myImage = document.getElementById("gambar")
+            myImage.src = ''
+            if (pilih == '1') {
+                myImage.src = 'https://pngimg.com/uploads/koala/koala_PNG12.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Koala')
+                }, 700);
+            } else if (pilih == '2') {
+                myImage.src =
+                    'https://pngimg.com/uploads/fish/fish_PNG25153.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Ikan')
+                }, 700);
+            } else if (pilih == '3') {
+                myImage.src =
+                    'https://pngimg.com/uploads/cat/cat_PNG50533.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Kucing')
+                }, 700);
+            } else if (pilih == '4') {
+                myImage.src =
+                    'https://pngimg.com/uploads/gorilla/gorilla_PNG18712.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Gorila')
+                }, 700);
+            } else if (pilih == '5') {
+                myImage.src =
+                    'https://pngimg.com/uploads/flamingo/flamingo_PNG15113.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Flamingo')
+                }, 700);
+            } else if (pilih == '6') {
+                myImage.src = 'https://pngimg.com/uploads/lion/lion_PNG23290.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Singa')
+                }, 700);
+            } else if (pilih == '7') {
+                myImage.src = 'https://pngimg.com/uploads/panda/panda_PNG16.png'
+                setTimeout(function () {
+                    alert('Ini Gambar Panda');
+                }, 700);
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <select style="width: 200px; height: 30px;" name="" id="pilih" onchange="load()">
+        <option value="" hidden>Pilih Gambar ....</option>
+        <option value="1">Koala</option>
+        <option value="2">Ikan</option>
+        <option value="3">Kucing</option>
+        <option value="4">Gorila</option>
+        <option value="5">Flamingo</option>
+        <option value="6">Singa</option>
+        <option value="7">Panda</option>
+    </select>
+
+    <div style="margin-top: 30px;">
+        <img width="30%" id="gambar" src="" alt="">
+    </div>
+</body>
+
+</html>
